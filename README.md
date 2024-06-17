@@ -16,5 +16,5 @@ This is the place for practice and improve my skill.
 
 |Name|Difficulty| Technologies / Approaches |
 |---|---|---|
-
-| [QR code component](https://nyansunbo.github.io/frontendmentor/qr-code-component-main/?fbclid=IwZXh0bgNhZW0CMTAAAR25WIvSd4DEIiQmKkgOPftjkwEyWgRgyrc4ZmutjsBCe19JFEqhxA52sMY_aem_ZmFrZWR1bW15MTZieXRlcw) | :star:   | HTML, CSS|
+| [QR code component](https://nyansunbo.github.io/frontendmentor/qr-code-component-main) | :star:   | HTML, CSS |
+| [Blog preview card](https://nyansunbo.github.io/frontendmentor/blog-preview-card-main) | :star:   | HTML, CSS |
