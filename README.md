@@ -19,3 +19,4 @@ This is the place for practice and improve my skill.
 | [QR code component](https://nyansunbo.github.io/frontendmentor/qr-code-component-main) | :star:   | HTML, CSS |
 | [Blog preview card](https://nyansunbo.github.io/frontendmentor/blog-preview-card-main) | :star:   | HTML, CSS |
 | [Social links profile](https://nyansunbo.github.io/frontendmentor/social-links-profile-main/)| :star: | HTML, CSS |
+| [Recipe page](https://nyansunbo.github.io/frontendmentor/recipe-page-main/)| :star: | HTML, CSS |
