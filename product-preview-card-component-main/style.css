@@ -1,0 +1,180 @@
+:root{
+    --dark-cyan: hsl(158, 36%, 37%);
+    --cream: hsl(30, 38%, 92%);
+    --very-dark-blue: hsl(212, 21%, 14%);
+    --dark-grayish-blue: hsl(228, 12%, 48%);
+    --white: hsl(0, 0%, 100%);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: var(--cream);
+    font-family: "Montserrat", sans-serif;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+p{
+    font-size: 14px;
+}
+
+h1{
+    font-family: "Fraunces", serif;
+}
+
+.content{
+    background-color: var(--white);
+    width: 90vw;
+    height: max-content;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+img{
+    object-fit: scale-down;
+    width: 100%;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.product-header{
+    color: var(--dark-grayish-blue);
+    margin: 1.25rem 5vw 0.5rem;
+    letter-spacing: 0.275em;
+    font-size: 12px;
+    font-weight: 500;
+
+}
+
+h1{
+    margin: 0.5rem 5vw 1rem;
+    font-size: 31px;
+}
+
+.product-content{
+    color: var(--dark-grayish-blue);
+    margin: 0 5vw 1rem;
+    line-height: 1.4rem;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.price-detial{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0rem 5vw;
+}
+
+.price-detial h2{
+    color: var(--dark-cyan);
+    font-family: "Fraunces", serif;
+    font-size: 31px;
+    margin-right: 1.35rem;
+}
+
+.price-detial p{
+    color: var(--dark-grayish-blue);
+    text-decoration-line: line-through; 
+    font-weight: 500; 
+}
+
+.btn{
+    font-family: "Montserrat", sans-serif;
+    background-color: var(--dark-cyan);
+    color: var(--white);
+   
+    width: 80vw;
+    height: 3rem;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    margin-left: 5vw;
+    margin-right: 5vw;
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+
+    border: 0px;
+    border-radius: 10px;
+
+    font-weight: 700;
+    font-size: 14px;
+}
+
+svg{
+    margin-right: 0.5rem;
+}
+
+@media only screen and (min-width: 720px){
+    .content{
+        background-color: var(--white);
+        width: 700px;
+        height: 550px;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: row;
+    }
+
+    picture{
+        width: 350px;
+        height: 550px;
+    } 
+    img{
+        height: 100%;
+        border-radius: 0.5rem 0rem 0rem 0.5rem;
+        object-fit: cover;
+    }
+
+    section{
+        width: 350px;
+        height: 550px;
+    }
+
+    .btn{
+        width: 280px;
+    }
+
+    .product-header{
+        margin: 2.5rem 2.5rem 1.5rem 2.5rem;
+        font-size: 1rem;
+    }
+
+    h1{
+        margin: 0.5rem 2.5rem 1.35rem 2.5rem;
+        font-size: 40px;
+    }
+    
+    .product-content{
+        margin: 1.5rem 2rem 1rem 2.5rem;
+        font-size: 17px;
+        line-height: 1.75rem;
+    }
+    
+    .price-detial{
+        margin: 1.5rem 2rem 1rem 2.5rem;
+    }
+    
+    .price-detial h2{
+        font-size: 40px;
+    }
+    
+    .price-detial p{
+        font-weight: 500; 
+        font-size: 17px;
+    }
+
+    .btn{
+        margin: 1.75rem 2rem 1rem 2.5rem;
+    }
+
+}
