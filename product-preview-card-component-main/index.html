@@ -5,19 +5,20 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <title>Frontend Mentor | Product preview card component</title>
-  
-
 </head>
 <body>
-
   <main>
-    <div class="content">
+    <div class="content" 
+         data-aos="fade-zoom-in" 
+         data-aos-delay="200">
       <picture>
         <source
           media="(min-width: 7)"
@@ -44,5 +45,8 @@
       </section>
     </div>
   </main>
+  <script>
+    AOS.init();
+  </script>
 </body>
 </html>
