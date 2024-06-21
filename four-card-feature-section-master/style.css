@@ -136,7 +136,19 @@ body {
         justify-content: center;
     }
 
+    .header-title, .header-subtitle{
+        font-size: 2.5rem;
+    }
+
+    .header{
+        max-width: 500px;
+    }
+
     .card-container{
         width: 400px;
+    }
+
+    .card-cyan, .card-red, .card-orange, .card-blue {
+        padding: 1rem 2rem;
     }
 }
