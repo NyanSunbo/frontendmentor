@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap');
+
+:root{
+    --moderate-violet: hsl(263, 55%, 52%);
+    --moderate-violet-opacity: hsl(263, 55%, 62%);
+    --very-dark-grayish-blue: hsl(217, 19%, 35%);
+    --very-dark-blackish-blue: hsl(219, 29%, 14%);
+    --white: hsl(0, 0%, 100%);
+    --light-gray: hsl(0, 0%, 81%);
+    --light-grayish-blue: hsl(210, 46%, 95%);
+}
+
+
+body{
+    font-family: "Barlow Semi Condensed", sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--light-grayish-blue);
+    min-height: 100vh;
+    min-width: 100vw;
+}
+
+p{
+    font-size: 13px;
+}
+
+.grid-layout{
+    display: flex;
+    flex-direction: column;
+    margin: 1.5rem;
+    max-width: 1024px;
+}
+
+/* Card Section */
+
+.card{
+    border-radius: 10px;
+    margin: 0.5rem;
+    padding: 2rem;
+}
+
+
+
+/* Header */
+
+.header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.user-image{
+    object-fit: scale-down;
+    height: 32px;
+    width: 32px;
+    border-radius: 50%;
+    margin-right: 1.2rem;
+    
+}
+
+.a .user-image, .d .user-image{
+    border: 2px solid var(--moderate-violet-opacity);
+}
+
+.user-info h4,.user-info p{
+    font-weight: 500;
+    margin: 0px;
+}
+
+.review h3,.review p{
+    margin: 1rem 0px 0px 0px;
+}
+
+
+
+.header p{
+    opacity: 0.5;
+    font-weight: 500;
+}
+
+/* Card subclass */
+.a{
+    background-image: url(/testimonials-grid-section-main/images/bg-pattern-quotation.svg);
+    background-position: right 1rem top;    
+    background-repeat: no-repeat;
+    background-color: var(--moderate-violet);
+    color: var(--light-grayish-blue);
+    grid-area: a;
+}
+
+.b{
+    background-color: var(--very-dark-grayish-blue);
+    color: var(--light-grayish-blue);
+    grid-area: b;
+}
+
+.c{
+    background-color: var(--white);
+    color: var(--very-dark-grayish-blue);
+    grid-area: c;
+}
+
+
+.d{
+    background-color: var(--very-dark-blackish-blue);
+    color: var(--light-grayish-blue);
+    grid-area: d;
+}
+
+.e{
+    background-color: var(--white);
+    color: var(--very-dark-grayish-blue);
+    grid-area: e;
+}
+
+
+.review p{
+    opacity: 0.7;
+    font-weight: 500;
+}
+
+
+@media only screen and (min-width:600px) {
+
+    .grid-layout{
+        display: grid;
+        grid-template-areas: 
+        'a a b b'
+        'a a d d'
+        'c c d d'
+        'e e e e';
+    }
+
+    .a{
+        background-position: right 3.5rem top;    
+    }
+}
+
+@media only screen and (min-width:1040px) {
+
+    .grid-layout{
+        display: grid;
+        grid-template-areas: 
+        'a a a a a a b e'
+        'c d d d d d d e';
+        margin: 2.5rem 3rem;     
+    }
+
+    .card{
+        padding: 1.5rem 2rem;
+    }
+
+    .a{
+        background-position: right 3.5rem top;    
+    }
+}
+
