@@ -82,7 +82,7 @@ p{
 
 /* Card subclass */
 .a{
-    background-image: url(/testimonials-grid-section-main/images/bg-pattern-quotation.svg);
+    background-image: url(./images/bg-pattern-quotation.svg);
     background-position: right 1rem top;    
     background-repeat: no-repeat;
     background-color: var(--moderate-violet);
