@@ -178,12 +178,13 @@ svg{
             flex-direction: row;
             width: 770px;
             max-width: 1024px;
+            position: relative;
         }
 
         .content{
             display: flex;
             flex-direction: column;
-            justify-content: space-between
+            justify-content: space-between;
         }
 
         .item-image{
@@ -201,12 +202,23 @@ svg{
         }
 
         .social{
-            background-color: hsl(217, 19%, 35%);  
-            border-radius: 0px 0px 10px 10px;
-            color:hsl(212, 23%, 69%);
-            overflow:hidden;
-            right:10%;
-            bottom:42%;
-            min-width: 220px;
+            position: absolute;
+            left: 600px;
+            bottom: 70px;
+            padding: 2rem;
+            width: max-content;
+            border-radius: 10px;
+            padding: 0.25rem 0.5rem;
+            z-index: 0;
+        }
+
+        .arrow{
+            display: block;
+            border-color: var(--very-dark-grayish-blue) transparent transparent transparent;
+            border-width: 14px;
+            border-style: solid;
+            position: absolute;
+            left: 710px;
+            bottom: 45px;
         }
   }

@@ -1,14 +1,16 @@
 var buttonPre = document.getElementById('btn-share-pre');
 var buttonPost = document.getElementById('btn-share-post');
 
+var arrowButton = document.getElementById('arrow');
+
+
 var imgPre = document.getElementById('img-pre');
 var imgPost = document.getElementById('img-post');
 
 var social = document.getElementById('social');
 var user = document.getElementById('user-section');
 
-var isDesktop = window.matchMedia("(max-width: 770px)")
-
+var isMobile = window.matchMedia("(max-width: 770px)")
 
 var twitter = document.getElementById('twitter');
 var facebook = document.getElementById('facebook');
@@ -16,22 +18,36 @@ var pinterest = document.getElementById('pinterest');
 
 // onClick
 buttonPre.addEventListener('click', function() {
-        if(isDesktop.matches)
+        if(isMobile.matches)
         {
             social.style.display = 'block';
             user.style.display = 'none';
         } else {
-            social.style.display = 'block';
-            buttonPost.style.display = 'none';
+
+            if(social.style.display == 'block')
+            {
+                social.style.display = 'none';
+                buttonPost.style.display = 'block';
+                arrowButton.style.display = 'none';
+            } else {
+                social.style.display = 'block';
+                buttonPost.style.display = 'none';
+                arrowButton.style.display = 'block';
+            }
+
         }      
 });
 
 buttonPost.addEventListener('click', function() {
-    if(isDesktop.matches)
+    if(isMobile.matches)
     {
         social.style.display = 'none';
         user.style.display = 'flex';
-    } 
+    } else {
+        social.style.display = 'block';
+        buttonPost.style.display = 'none';
+        arrowButton.style.display = 'none';
+    }    
 });
 
 
@@ -45,7 +61,6 @@ buttonPre.addEventListener('mouseover', function() {
 buttonPre.addEventListener('mouseout', function() {
     imgPre.src = "./images/icon-share.svg";  
 });
-
 
 buttonPost.addEventListener('mouseover', function() {
     imgPost.src = "./images/icon-share.svg";   
