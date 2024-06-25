@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
+
+  <title>Frontend Mentor | Article preview component</title>
+
+
+</head>
+
+<body>
+
+  <main>
+    <div class="grid-layout">
+
+      <div class="image-section">
+        <img class="item-image" src="./images/drawers.jpg" alt="Item image">
+      </div>
+
+      <div class="content">
+        <div class="detail-section">
+          <h3>
+            Shift the overall look and feel by adding these wonderful
+            touches to furniture in your home
+          </h3>
+          <p>
+            Ever been in a room and felt like something was missing? Perhaps
+            it felt slightly bare and uninviting. I’ve got some simple tips
+            to help you make any room feel complete.
+          </p>
+        </div>
+
+        <div id="user-section" class="user-section" style="display: flex;">
+          <div class="user">
+            <div class="image-info">
+              <img class="user-image" src="./images/avatar-michelle.jpg" alt="User image">
+            </div>
+
+            <div class="user-detail">
+              <h5>Michelle Appleton</h5>
+              <p>28 Jun 2020</p>
+            </div>
+          </div>
+
+
+          <button id="btn-share-pre" class="btn-share">
+            <img id="img-pre" src="./images/icon-share.svg" alt="share icon">
+          </button>
+        </div>
+
+        <div id="arrow" class="arrow" style="display: none;"></div>
+        <div id="social" class="social" style="display: none;">     
+          <ul>
+            <li><span>S h a r e</span></li>
+            <li>
+              <a href="https://www.facebook.com" target="_blank"><img id="facebook" src="./images/icon-facebook.svg"
+                  alt="facebook icon"></a>
+            </li>
+            <li>
+              <a href="https://www.x.com" target="_blank"><img id="twitter" src="./images/icon-twitter.svg" alt="twitter icon"></a>
+            </li>
+            <li>
+              <a href="https://www.pinterest.com" target="_blank"><img id="pinterest" src="./images/icon-pinterest.svg"
+                  alt="pinterest icon"></a>
+            </li>
+            <li>
+              <button id="btn-share-post" class="btn-share" style="display: block;">
+                <img id="img-post" src="./images/icon-share-hover.svg" alt="share icon">
+              </button>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+</body>
+
+</html>
