@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+:root{
+    --Tomato: hsl(4, 100%, 67%);
+    --dark-slate-grey: hsl(234, 29%, 20%);
+    --charcoal-grey: hsl(235, 18%, 26%);
+    --grey: hsl(231, 7%, 60%);
+    --white: hsl(0, 0%, 100%);
+}
+
+
+p {
+    font-size: 16px;
+    color: var(--dark-slate-grey);
+    font-weight: 400;
+    margin: 0.5rem 0.75rem 1rem 1rem;
+    word-break: break-word;
+}
+
+body{
+    font-family: "Roboto", sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: var(--grey);
+}
+
+.layout,.signup-form,.success-message{
+    min-width: 320px;
+    width: 330px;
+    height: 760px;
+    background-color: var(--white);
+    border-radius: 10px;
+}
+
+.success-message{
+    height: 500px;
+}
+
+/* Form Page */
+
+/* Header */
+img.image-header{
+    width: 100%;
+    border-radius: 10px;
+}
+
+h1{
+    margin: 1.5rem 1rem 1.5rem 1rem;
+    color: var(--dark-slate-grey);
+}
+
+ul{
+    list-style: none;
+    margin: 0px;
+    padding: 0rem;
+}
+
+li{
+    display: flex;
+    flex-direction: row;
+}
+
+li img{
+    width: 21px;
+    height: 21px;
+    margin: 0.5rem 0rem 0rem 1rem;
+}
+
+li p{
+    padding: auto;
+}
+
+h5{
+    margin: 1rem 0px 0px 1rem;
+}
+
+#email{
+    width: 90%;
+    height: 50px;
+    text-indent: 20px;
+    font-size: 16px;
+    font-weight: 400;
+    border-radius: 10px;
+    border: 1px solid var(--grey);
+    padding: 0px;
+    margin: 0.5rem 1rem 1.5rem 1rem;
+}
+
+.btn-submit{
+    width: 90%;
+    height: 50px;
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--white);
+    background-color: var(--dark-slate-grey);
+    border-radius: 10px;
+    border: 0px;
+    margin: 0.5rem 1rem 1.5rem 1rem;
+}
+
+.btn-submit:hover{
+    cursor: pointer;
+}
+
+.btn-submit:active{
+    border: 1px solid var(--dark-slate-grey);
+    background-color: var(--white);
+    color: var(--dark-slate-grey);
+}
+
+/* Success Page */
+
+.context{
+    margin-bottom: 7rem;
+}
+.success-icon{
+    transform: scale(3);
+    margin: 5rem 0rem 1rem 2.5rem;
+}

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Newsletter sign-up form with success message</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="app.js"></script>
+  
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+
+  <!-- Sign-up form start -->
+    <div id="layout">
+        <div id="signup-form" class="signup-form" style="display: block;" >
+          <img class="image-header" src="./assets/images/illustration-sign-up-mobile.svg" alt="image signup-form">
+          <h1>Stay updated!</h1>
+          <p>Join 60,000+ product managers receiving monthly updates on:</p>
+          <ul>
+            <li><img src="./assets/images/icon-list.svg" alt="icon list"><p>Product discovery and building what matters</p></li>
+            <li><img src="./assets/images/icon-list.svg" alt="icon list"><p>Measuring to ensure updates are a success</p></li>
+            <li><img src="./assets/images/icon-list.svg" alt="icon list"><p>And much more!</p></li>
+          </ul>
+          <h5>Email address</h5>
+          <input id="email" type="text" placeholder="email@company.com" required>
+          <input class="btn-submit" type="submit" value="Subscribe to monthly newsletter">
+        </div>
+
+        <div id="success-message" class="success-message" style="display: none;">
+          <div class="context">
+            <img class="success-icon" src="./assets/images/icon-list.svg" alt="icon list">
+            <h1>Thanks for subscribing!</h1>
+            <p>A confirmation email has been sent to <strong class=""></strong> 
+              Please open it and click the button inside to confirm your subscription.</p>  
+          </div>
+          <input class="btn-submit" type="submit" value="Dismiss message">
+        </div>  
+    </div>
+        
+
+</body>
+</html>
