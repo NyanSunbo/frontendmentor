@@ -22,3 +22,4 @@ This is the place for practice and improve my skill.
 | [Recipe page](https://nyansunbo.github.io/frontendmentor/recipe-page-main/)| :star: | HTML, CSS |
 | [Four Card Feature Section](https://nyansunbo.github.io/frontendmentor/four-card-feature-section-master/)| :star: | HTML, CSS |
 | [Testimonials Grid Section](https://nyansunbo.github.io/frontendmentor/testimonials-grid-section-main/)| :star: :star: | HTML, CSS |
+| [Newsletter Sign-up With Success Message](https://nyansunbo.github.io/frontendmentor/newsletter-sign-up-with-success-message-main/)| :star: :star: | HTML, CSS |
