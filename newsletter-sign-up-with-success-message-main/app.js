@@ -1,17 +1,39 @@
-const btnSubmit = document.getElementsByClassName('btn-submit');
-const formInfo = document.getElementById('signup-form');
-const formSuccess = document.getElementById('success-message');
+const form = document.getElementById('form');
 
-for(let i=0; i<btnSubmit.length ; i++){
 
-    btnSubmit[i].addEventListener('click', (e) => {
-        
-        if(formInfo.style.display === 'none'){
-            formSuccess.style.display = 'none';
-            formInfo.style.display = 'block';
+form.addEventListener('submit', (e) =>{
+    e.preventDefault();
+
+    const email = document.getElementById('email');
+    let emailValue = email.value;
+    console.log(emailValue);
+
+    if(validateEmail(emailValue)){
+        gotoSuccessPage(emailValue);
+    } else {
+        const spanEmail = document.getElementById('email-error');
+        spanEmail.style.display = 'block';
+        email.style.borderColor = 'red';
+        email.style.backgroundColor = 'hsl(4, 85%, 90%)';
+
+        if(emailValue === ''){
+            spanEmail.textContent = "Email required";
         } else {
-            formSuccess.style.display = 'block';
-            formInfo.style.display = 'none';
+            spanEmail.textContent = "Valid email required";
         }
-    });
+    }
+    
+});
+
+function validateEmail(email) {
+    const regex = /^\S+@\S+\.\S+$/;
+    return regex.test(email);
+  }
+
+function gotoSuccessPage(email){
+    window.location.href = `success.html?email=${email}`;
+}
+
+function gotoIndexPage(){
+    window.location.href = 'index.html';
 }
