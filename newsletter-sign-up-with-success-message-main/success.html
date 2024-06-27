@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Newsletter sign-up form with success message</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer type="text/javascript" src="app.js"></script>
+
+</head>
+<body>
+
+  <!-- Sign-up form start -->
+        <div id="success-message" class="success-message">
+          <div class="context">
+            <img class="success-icon" src="./assets/images/icon-list.svg" alt="icon list">
+            <h1>Thanks for subscribing!</h1>
+            <p>A confirmation email has been sent to <strong id="user-email"></strong>. 
+              Please open it and click the button inside to confirm your subscription.</p>  
+          </div>
+          <input id="back-to-index" onclick="gotoIndexPage()" class="btn-submit" type="submit" value="Dismiss message">
+        </div>  
+    </div>
+
+</body>
+  <script type="text/javascript">
+    const queryString = window.location.search;
+    const urlParams = new URLSearchParams(queryString);
+    console.log(urlParams.get('email'));
+    
+    const email = document.getElementById('user-email');
+    email.innerText = urlParams.get('email');
+  </script>
+</html>

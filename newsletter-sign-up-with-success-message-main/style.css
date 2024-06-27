@@ -1,0 +1,229 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+:root{
+    --Tomato: hsl(4, 100%, 67%);
+    --dark-slate-grey: hsl(234, 29%, 20%);
+    --charcoal-grey: hsl(235, 18%, 26%);
+    --grey: hsl(231, 7%, 60%);
+    --white: hsl(0, 0%, 100%);
+}
+
+
+p {
+    font-size: 16px;
+    color: var(--dark-slate-grey);
+    font-weight: 400;
+    margin: 0.5rem 0.75rem 1rem 1.5em;
+    word-break: break-word;
+}
+
+li p{
+    margin: 0.5rem 0.75rem 1rem 1em;
+}
+
+body{
+    font-family: "Roboto", sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: var(--grey);
+}
+
+#layout{
+    position: relative;
+    min-width: 320px;
+    width: 25rem;
+    max-width: 95vw;
+    height: 775px;
+    background-color: var(--white);
+    border-radius: 10px;
+}
+
+.success-message{
+    position: relative;
+    min-width: 320px;
+    width: 25rem;
+    max-width: 95vw;
+    height: 400px;
+    background-color: var(--white);
+    border-radius: 10px;
+}
+
+.success-message{
+    height: 500px;
+}
+
+/* Form Page */
+
+/* Header */
+.image-header{
+    width: 100%;
+    border-radius: 10px;
+}
+
+h1{
+    margin: 1.5rem 1rem 1.5rem 1.5rem;
+    color: var(--dark-slate-grey);
+}
+
+ul{
+    list-style: none;
+    margin: 0px;
+    padding: 0rem;
+}
+
+li{
+    display: flex;
+    flex-direction: row;
+}
+
+li img{
+    width: 21px;
+    height: 21px;
+    margin: 0.5rem 0rem 0rem 1.5rem;
+}
+
+li p{
+    padding: auto;
+}
+
+#form{
+    margin: 1rem 0px 0px 0rem;
+}
+label{
+    margin: 1.5rem 0px 0px 1.5rem;
+    font-weight: 700;
+}
+
+#email{
+    width: 89%;
+    height: 50px;
+    text-indent: 20px;
+    font-size: 16px;
+    font-weight: 400;
+    border-radius: 10px;
+    border: 1px solid var(--grey);
+    padding: 0px;
+    margin: 0.5rem 1.5rem 1rem 1.5rem;
+}
+
+#email-error{
+    color: var(--Tomato);
+    font-weight: 700;
+    font-size: 13px;
+}
+
+.email-header{
+    margin: 0rem 1.5rem 0rem 0rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.btn-submit{
+    width: 89%;
+    height: 50px;
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--white);
+    background-color: var(--dark-slate-grey);
+    border-radius: 10px;
+    border: 0px;
+    margin: 0.5rem 1.5rem 1.5rem 1.5rem;
+}
+
+.btn-submit:hover,.btn-submit:active{
+    cursor: pointer;
+    background-image: linear-gradient(to right,hsl(4, 100%, 67%),hsl(20, 100%, 67%));
+}
+
+.context{
+    margin-bottom: 9rem;
+}
+.success-icon{
+    transform: scale(3);
+    margin: 5rem 0rem 1rem 3rem;
+}
+
+.mobile-img{
+    display: block;
+}
+
+.desktop-img{
+    display: none;
+}
+
+@media only screen and (min-width: 860px) {
+    #layout{
+        position: relative;
+        min-width: 320px;
+        width: 850px;
+        max-width: 1200px;
+        height: 600px;
+        background-color: var(--white);
+        border-radius: 25px;
+        padding: 1rem;
+    }
+
+    h1{
+        font-size: 56px;
+    }
+    p{
+        font-size: 16px;
+    }
+    .mobile-img{
+        display: none;
+    }
+    
+    .desktop-img{
+        display: block;        
+    }
+
+    #layout{
+        display: grid;
+        grid-template-areas: 
+                'form image';
+    }
+
+    #form{
+        width: 400px;
+        border-radius: 0px 10px 10px 0px;
+        margin: 5rem 2rem 2rem 2rem;
+        grid-area: form;
+    }
+
+    .image-header{    
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        grid-area: image; 
+    }
+
+    #back-to-index{
+        width: 92%;
+        height: 50px;
+        font-size: 16px;
+        font-weight: 700;
+        color: var(--white);
+        background-color: var(--dark-slate-grey);
+        border-radius: 10px;
+        border: 0px;
+        /* margin: 0rem 1rem 1.5rem 1rem; */
+    }
+
+    .success-message{
+        width: 400px;
+        height: 400px;
+        padding: 2rem;
+        border-radius: 30px;
+    }
+
+    .success-icon{
+        transform: scale(3);
+        margin: 1rem 0rem 1rem 2.5rem;
+    }
+
+    .context{
+        margin-bottom: 2.5rem;
+    }
+}

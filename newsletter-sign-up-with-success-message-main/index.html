@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Newsletter sign-up form with success message</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer type="text/javascript" src="validator.min.js"></script>
+  <script defer type="text/javascript" src="app.js"></script>
+
+</head>
+<body>
+
+  <!-- Sign-up form start -->
+    <div id="layout" class="layout">
+        <img class="image-header mobile-img" src="./assets/images/illustration-sign-up-mobile.svg" alt="image signup-form">
+        <img class=" image-header desktop-img" src="./assets/images/illustration-sign-up-desktop.svg" alt="image signup-form">    
+      <form id="form" action="success.html">
+            <h1>Stay updated!</h1>
+            <p>Join 60,000+ product managers receiving monthly updates on:</p>
+            <ul>
+              <li><img src="./assets/images/icon-list.svg" alt="icon list"><p>Product discovery and building what matters</p></li>
+              <li><img src="./assets/images/icon-list.svg" alt="icon list"><p>Measuring to ensure updates are a success</p></li>
+              <li><img src="./assets/images/icon-list.svg" alt="icon list"><p>And much more!</p></li>
+            </ul>
+            <div class="email-header"> 
+              <label for="email">Email address</label>
+              <span aria-live="polite" id="email-error" style="display: none;"></span>
+            </div>
+            <input id="email" type="text" value="" placeholder="email@company.com">
+            <input class="btn-submit" type="submit" value="Subscribe to monthly newsletter">
+      </form>
+    </div>
+
+</body>
+</html>
