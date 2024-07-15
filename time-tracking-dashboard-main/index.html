@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <script defer type="text/javascript" href="index.js"></script>
+  <title>Frontend Mentor | Time tracking dashboard</title>
+
+</head>
+
+<body>
+
+  <main>
+
+    <section id="user" data-test="user">
+      <div id="user-blog" class="user-blog">
+        <div class="card">
+          <img src="./images/image-jeremy.png" alt="user image">
+          <div class="info">
+            <p>Report for</p>
+            <h1>Jeremy Robson</h1>
+          </div>
+        </div>
+
+        <div class="header-info">
+          <button class="daily" data-test="btnDaily">Daily</button>
+          <button class="weekly" data-test="btnWeekly">Weekly</button>
+          <button class="Monthly" data-test="btnMonthly">Daily</button>
+        </div>
+      </div>
+    </section>
+
+    <section id="data-info" data-test="data-info">
+      <div id="work" data-test="work">
+        <div class="border border-woker"></div>
+        <div class="card">
+          <div class="card-header">
+            <h3>Work</h3>
+            <button>
+              <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z"
+                  fill="#BBC0FF" fill-rule="evenodd" />
+              </svg>
+            </button>
+          </div>
+          <div class="card-info">
+            <h1 class="time-info" id="work-time">32hrs</h1>
+            <p class="range-info" id="work-range">Last Week - 36hrs</p>
+          </div>
+        </div>
+      </div>
+
+      <div id="play" data-test="play">
+        <div class="border border-woker"></div>
+        <div class="card">
+          <div class="card-header">
+            <h3>Play</h3>
+            <button>
+              <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z"
+                  fill="#BBC0FF" fill-rule="evenodd" />
+              </svg>
+            </button>
+          </div>
+          <div class="card-info">
+            <h1 class="time-info" id="play-time">32hrs</h1>
+            <p class="range-info" id="play-range">Last Week - 36hrs</p>
+          </div>
+        </div>
+      </div>
+
+      <div id="study" data-test="study">
+        <div class="border border-woker"></div>
+        <div class="card">
+          <div class="card-header">
+            <h3>Study</h3>
+            <button>
+              <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z"
+                  fill="#BBC0FF" fill-rule="evenodd" />
+              </svg>
+            </button>
+          </div>
+          <div class="card-info">
+            <h1 class="time-info" id="study-time">32hrs</h1>
+            <p class="range-info" id="study-range">Last Week - 36hrs</p>
+          </div>
+        </div>
+      </div>
+
+      <div id="exercise" data-test="exercise">
+        <div class="border border-woker"></div>
+        <div class="card">
+          <div class="card-header">
+            <h3>Exercise</h3>
+            <button>
+              <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z"
+                  fill="#BBC0FF" fill-rule="evenodd" />
+              </svg>
+            </button>
+          </div>
+          <div class="card-info">
+            <h1 class="time-info" id="exercise-time">32hrs</h1>
+            <p class="range-info" id="exercise-range">Last Week - 36hrs</p>
+          </div>
+        </div>
+      </div>
+
+      <div id="social" data-test="social">
+        <div class="border border-woker"></div>
+        <div class="card">
+          <div class="card-header">
+            <h3>Social</h3>
+            <button>
+              <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z"
+                  fill="#BBC0FF" fill-rule="evenodd" />
+              </svg>
+            </button>
+          </div>
+          <div class="card-info">
+            <h1 class="time-info" id="social-time">32hrs</h1>
+            <p class="range-info" id="social-range">Last Week - 36hrs</p>
+          </div>
+        </div>
+      </div>
+
+      <div id="self-care" data-test="self-care">
+        <div class="border border-woker"></div>
+        <div class="card">
+          <div class="card-header">
+            <h3>Self-care</h3>
+            <button>
+              <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z"
+                  fill="#BBC0FF" fill-rule="evenodd" />
+              </svg>
+            </button>
+          </div>
+          <div class="card-info">
+            <h1 class="time-info" id="self-care-time">32hrs</h1>
+            <p class="range-info" id="self-care-range">Last Week - 36hrs</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+
+</body>
+
+</html>
